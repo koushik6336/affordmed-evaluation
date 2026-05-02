@@ -1,0 +1,178 @@
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] Starting Vehicle Maintenance Scheduler
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] Calling API: http://20.207.122.201/evaluation-service/depots
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] Response status: 200
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] Calling API: http://20.207.122.201/evaluation-service/vehicles
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] Response status: 200
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed depot ID=2 hours=135
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed depot ID=3 hours=188
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed depot ID=4 hours=97
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed depot ID=5 hours=164
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=b7fce9f7-6ca4-414f-8838-761cf2803adc duration=2 impact=6
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=ec11e8b0-28b3-4897-98e8-b4960dccf2db duration=5 impact=4
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=363ddbc0-0d06-48ba-9ad3-dc5b201fdeef duration=3 impact=8
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=c7844949-c9ba-4b8c-99fb-5bebcc4f2ca0 duration=6 impact=2
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=4abe6f55-472a-44fa-a09c-53fd4a0009b1 duration=6 impact=1
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=97faefe9-7b0f-435d-b3c4-2b999541391d duration=8 impact=5
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=acf1f609-a28d-4763-b1b6-9b50fbe69d86 duration=3 impact=9
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=ee606143-a024-475b-a44c-e7b4c686bd66 duration=4 impact=1
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=da50b7ed-87c3-40c1-bdb0-1ccd17188e19 duration=8 impact=10
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=73d0f27b-ace1-49f1-b09e-1f22ab155772 duration=6 impact=6
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=4ba8cb4c-7a09-4902-bb46-a69e5550be41 duration=4 impact=3
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=3fb5dbcb-154c-4e64-9afc-274191514e16 duration=3 impact=6
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=afde8b23-e1fb-4e6a-9edd-1c85e4f6aeb5 duration=2 impact=3
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=079002c0-715d-4fd1-97b0-cc6e51c5e551 duration=6 impact=2
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=81419879-6288-484c-b413-e7d6030e950f duration=4 impact=3
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=22023213-8544-4c91-882f-5d47ec61c591 duration=7 impact=3
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=bce22745-5c33-4400-9af1-e3400d331b51 duration=7 impact=9
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=aef8b5c1-05a7-4396-8565-42730cf234cd duration=2 impact=10
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=82103e52-1d90-4794-b8df-5a253140444e duration=1 impact=4
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=78f2d4c1-2fb7-4f11-a0b9-f8a9fc376e37 duration=8 impact=10
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=899c44c2-a90b-40e6-9a23-2258887cd48f duration=3 impact=1
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=fa5eabd2-7714-4984-bdca-9c2be522a976 duration=6 impact=4
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=11f3e8e6-b27c-49a7-9ad1-757a05b535f8 duration=5 impact=9
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=f792624c-ced8-4e2b-ac9e-c3f1a08e09df duration=8 impact=5
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=8e762d24-64cf-45e6-aa83-8ba1aaffc936 duration=2 impact=10
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=0a524aab-d552-4334-b36c-e87925fd5a5f duration=4 impact=4
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=59323fd4-43d2-4d62-ab87-8a603333503d duration=7 impact=4
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=697a1b04-f340-4f48-a3e6-3a6b0ad11434 duration=7 impact=3
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=8fa38187-a7f0-4231-986c-87b92bda0c12 duration=4 impact=7
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=bc248d49-9a21-450f-91b2-a8d5ed43e83a duration=4 impact=7
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=bfc1a184-6042-4b50-b9d4-17c1b092b369 duration=5 impact=3
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=f4d83de7-51e7-495d-aa00-3abf488f7be2 duration=2 impact=3
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=42db6743-f9a3-46e3-a482-08257757563d duration=2 impact=3
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=27adf531-e559-41c9-95de-cf1833d0e7da duration=6 impact=6
+[2026-05-02 10:43:53] [DEBUG] [VehicleMaintenanceScheduler] Parsed vehicle=776e54bd-d60e-4e3b-bab3-f77be439a0e2 duration=4 impact=1
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] Processing Depot ID=2 Budget=135
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] === Depot 2 Results ===
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] Budget: 135 hours | Used: 135 hours | Total Impact: 167
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=27adf531-e559-41c9-95de-cf1833d0e7da Duration=6 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=42db6743-f9a3-46e3-a482-08257757563d Duration=2 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=f4d83de7-51e7-495d-aa00-3abf488f7be2 Duration=2 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=bfc1a184-6042-4b50-b9d4-17c1b092b369 Duration=5 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=bc248d49-9a21-450f-91b2-a8d5ed43e83a Duration=4 Impact=7
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=8fa38187-a7f0-4231-986c-87b92bda0c12 Duration=4 Impact=7
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=697a1b04-f340-4f48-a3e6-3a6b0ad11434 Duration=7 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=59323fd4-43d2-4d62-ab87-8a603333503d Duration=7 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=0a524aab-d552-4334-b36c-e87925fd5a5f Duration=4 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=8e762d24-64cf-45e6-aa83-8ba1aaffc936 Duration=2 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=f792624c-ced8-4e2b-ac9e-c3f1a08e09df Duration=8 Impact=5
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=11f3e8e6-b27c-49a7-9ad1-757a05b535f8 Duration=5 Impact=9
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=fa5eabd2-7714-4984-bdca-9c2be522a976 Duration=6 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=78f2d4c1-2fb7-4f11-a0b9-f8a9fc376e37 Duration=8 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=82103e52-1d90-4794-b8df-5a253140444e Duration=1 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=aef8b5c1-05a7-4396-8565-42730cf234cd Duration=2 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=bce22745-5c33-4400-9af1-e3400d331b51 Duration=7 Impact=9
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=22023213-8544-4c91-882f-5d47ec61c591 Duration=7 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=81419879-6288-484c-b413-e7d6030e950f Duration=4 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=afde8b23-e1fb-4e6a-9edd-1c85e4f6aeb5 Duration=2 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=3fb5dbcb-154c-4e64-9afc-274191514e16 Duration=3 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=4ba8cb4c-7a09-4902-bb46-a69e5550be41 Duration=4 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=73d0f27b-ace1-49f1-b09e-1f22ab155772 Duration=6 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=da50b7ed-87c3-40c1-bdb0-1ccd17188e19 Duration=8 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=acf1f609-a28d-4763-b1b6-9b50fbe69d86 Duration=3 Impact=9
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=97faefe9-7b0f-435d-b3c4-2b999541391d Duration=8 Impact=5
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=363ddbc0-0d06-48ba-9ad3-dc5b201fdeef Duration=3 Impact=8
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=ec11e8b0-28b3-4897-98e8-b4960dccf2db Duration=5 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=b7fce9f7-6ca4-414f-8838-761cf2803adc Duration=2 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] Processing Depot ID=3 Budget=188
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] === Depot 3 Results ===
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] Budget: 188 hours | Used: 164 hours | Total Impact: 175
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=776e54bd-d60e-4e3b-bab3-f77be439a0e2 Duration=4 Impact=1
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=27adf531-e559-41c9-95de-cf1833d0e7da Duration=6 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=42db6743-f9a3-46e3-a482-08257757563d Duration=2 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=f4d83de7-51e7-495d-aa00-3abf488f7be2 Duration=2 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=bfc1a184-6042-4b50-b9d4-17c1b092b369 Duration=5 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=bc248d49-9a21-450f-91b2-a8d5ed43e83a Duration=4 Impact=7
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=8fa38187-a7f0-4231-986c-87b92bda0c12 Duration=4 Impact=7
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=697a1b04-f340-4f48-a3e6-3a6b0ad11434 Duration=7 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=59323fd4-43d2-4d62-ab87-8a603333503d Duration=7 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=0a524aab-d552-4334-b36c-e87925fd5a5f Duration=4 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=8e762d24-64cf-45e6-aa83-8ba1aaffc936 Duration=2 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=f792624c-ced8-4e2b-ac9e-c3f1a08e09df Duration=8 Impact=5
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=11f3e8e6-b27c-49a7-9ad1-757a05b535f8 Duration=5 Impact=9
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=fa5eabd2-7714-4984-bdca-9c2be522a976 Duration=6 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=899c44c2-a90b-40e6-9a23-2258887cd48f Duration=3 Impact=1
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=78f2d4c1-2fb7-4f11-a0b9-f8a9fc376e37 Duration=8 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=82103e52-1d90-4794-b8df-5a253140444e Duration=1 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=aef8b5c1-05a7-4396-8565-42730cf234cd Duration=2 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=bce22745-5c33-4400-9af1-e3400d331b51 Duration=7 Impact=9
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=22023213-8544-4c91-882f-5d47ec61c591 Duration=7 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=81419879-6288-484c-b413-e7d6030e950f Duration=4 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=079002c0-715d-4fd1-97b0-cc6e51c5e551 Duration=6 Impact=2
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=afde8b23-e1fb-4e6a-9edd-1c85e4f6aeb5 Duration=2 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=3fb5dbcb-154c-4e64-9afc-274191514e16 Duration=3 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=4ba8cb4c-7a09-4902-bb46-a69e5550be41 Duration=4 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=73d0f27b-ace1-49f1-b09e-1f22ab155772 Duration=6 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=da50b7ed-87c3-40c1-bdb0-1ccd17188e19 Duration=8 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=ee606143-a024-475b-a44c-e7b4c686bd66 Duration=4 Impact=1
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=acf1f609-a28d-4763-b1b6-9b50fbe69d86 Duration=3 Impact=9
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=97faefe9-7b0f-435d-b3c4-2b999541391d Duration=8 Impact=5
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=4abe6f55-472a-44fa-a09c-53fd4a0009b1 Duration=6 Impact=1
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=c7844949-c9ba-4b8c-99fb-5bebcc4f2ca0 Duration=6 Impact=2
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=363ddbc0-0d06-48ba-9ad3-dc5b201fdeef Duration=3 Impact=8
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=ec11e8b0-28b3-4897-98e8-b4960dccf2db Duration=5 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=b7fce9f7-6ca4-414f-8838-761cf2803adc Duration=2 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] Processing Depot ID=4 Budget=97
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] === Depot 4 Results ===
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] Budget: 97 hours | Used: 97 hours | Total Impact: 146
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=27adf531-e559-41c9-95de-cf1833d0e7da Duration=6 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=42db6743-f9a3-46e3-a482-08257757563d Duration=2 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=f4d83de7-51e7-495d-aa00-3abf488f7be2 Duration=2 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=bc248d49-9a21-450f-91b2-a8d5ed43e83a Duration=4 Impact=7
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=8fa38187-a7f0-4231-986c-87b92bda0c12 Duration=4 Impact=7
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=0a524aab-d552-4334-b36c-e87925fd5a5f Duration=4 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=8e762d24-64cf-45e6-aa83-8ba1aaffc936 Duration=2 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=11f3e8e6-b27c-49a7-9ad1-757a05b535f8 Duration=5 Impact=9
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=fa5eabd2-7714-4984-bdca-9c2be522a976 Duration=6 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=78f2d4c1-2fb7-4f11-a0b9-f8a9fc376e37 Duration=8 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=82103e52-1d90-4794-b8df-5a253140444e Duration=1 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=aef8b5c1-05a7-4396-8565-42730cf234cd Duration=2 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=bce22745-5c33-4400-9af1-e3400d331b51 Duration=7 Impact=9
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=afde8b23-e1fb-4e6a-9edd-1c85e4f6aeb5 Duration=2 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=3fb5dbcb-154c-4e64-9afc-274191514e16 Duration=3 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=4ba8cb4c-7a09-4902-bb46-a69e5550be41 Duration=4 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=73d0f27b-ace1-49f1-b09e-1f22ab155772 Duration=6 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=da50b7ed-87c3-40c1-bdb0-1ccd17188e19 Duration=8 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=acf1f609-a28d-4763-b1b6-9b50fbe69d86 Duration=3 Impact=9
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=97faefe9-7b0f-435d-b3c4-2b999541391d Duration=8 Impact=5
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=363ddbc0-0d06-48ba-9ad3-dc5b201fdeef Duration=3 Impact=8
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=ec11e8b0-28b3-4897-98e8-b4960dccf2db Duration=5 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=b7fce9f7-6ca4-414f-8838-761cf2803adc Duration=2 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] Processing Depot ID=5 Budget=164
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] === Depot 5 Results ===
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler] Budget: 164 hours | Used: 164 hours | Total Impact: 175
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=776e54bd-d60e-4e3b-bab3-f77be439a0e2 Duration=4 Impact=1
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=27adf531-e559-41c9-95de-cf1833d0e7da Duration=6 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=42db6743-f9a3-46e3-a482-08257757563d Duration=2 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=f4d83de7-51e7-495d-aa00-3abf488f7be2 Duration=2 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=bfc1a184-6042-4b50-b9d4-17c1b092b369 Duration=5 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=bc248d49-9a21-450f-91b2-a8d5ed43e83a Duration=4 Impact=7
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=8fa38187-a7f0-4231-986c-87b92bda0c12 Duration=4 Impact=7
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=697a1b04-f340-4f48-a3e6-3a6b0ad11434 Duration=7 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=59323fd4-43d2-4d62-ab87-8a603333503d Duration=7 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=0a524aab-d552-4334-b36c-e87925fd5a5f Duration=4 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=8e762d24-64cf-45e6-aa83-8ba1aaffc936 Duration=2 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=f792624c-ced8-4e2b-ac9e-c3f1a08e09df Duration=8 Impact=5
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=11f3e8e6-b27c-49a7-9ad1-757a05b535f8 Duration=5 Impact=9
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=fa5eabd2-7714-4984-bdca-9c2be522a976 Duration=6 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=899c44c2-a90b-40e6-9a23-2258887cd48f Duration=3 Impact=1
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=78f2d4c1-2fb7-4f11-a0b9-f8a9fc376e37 Duration=8 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=82103e52-1d90-4794-b8df-5a253140444e Duration=1 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=aef8b5c1-05a7-4396-8565-42730cf234cd Duration=2 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=bce22745-5c33-4400-9af1-e3400d331b51 Duration=7 Impact=9
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=22023213-8544-4c91-882f-5d47ec61c591 Duration=7 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=81419879-6288-484c-b413-e7d6030e950f Duration=4 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=079002c0-715d-4fd1-97b0-cc6e51c5e551 Duration=6 Impact=2
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=afde8b23-e1fb-4e6a-9edd-1c85e4f6aeb5 Duration=2 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=3fb5dbcb-154c-4e64-9afc-274191514e16 Duration=3 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=4ba8cb4c-7a09-4902-bb46-a69e5550be41 Duration=4 Impact=3
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=73d0f27b-ace1-49f1-b09e-1f22ab155772 Duration=6 Impact=6
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=da50b7ed-87c3-40c1-bdb0-1ccd17188e19 Duration=8 Impact=10
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=ee606143-a024-475b-a44c-e7b4c686bd66 Duration=4 Impact=1
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=acf1f609-a28d-4763-b1b6-9b50fbe69d86 Duration=3 Impact=9
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=97faefe9-7b0f-435d-b3c4-2b999541391d Duration=8 Impact=5
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=4abe6f55-472a-44fa-a09c-53fd4a0009b1 Duration=6 Impact=1
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=c7844949-c9ba-4b8c-99fb-5bebcc4f2ca0 Duration=6 Impact=2
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=363ddbc0-0d06-48ba-9ad3-dc5b201fdeef Duration=3 Impact=8
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=ec11e8b0-28b3-4897-98e8-b4960dccf2db Duration=5 Impact=4
+[2026-05-02 10:43:53] [INFO] [VehicleMaintenanceScheduler]   Selected -> TaskID=b7fce9f7-6ca4-414f-8838-761cf2803adc Duration=2 Impact=6
