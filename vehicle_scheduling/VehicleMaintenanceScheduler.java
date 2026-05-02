@@ -6,9 +6,9 @@ import java.util.*;
 
 public class VehicleMaintenanceScheduler {
 
-    private static final String DEPOTS_URL   = "http://20.207.122.201/evaluation-service/depots";
+    private static final String DEPOTS_URL = "http://20.207.122.201/evaluation-service/depots";
     private static final String VEHICLES_URL = "http://20.207.122.201/evaluation-service/vehicles";
-    private static final String AUTH_TOKEN   = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJrbDk0MTBAc3JtaXN0LmVkdS5pbiIsImV4cCI6MTc3NzY5OTU0OSwiaWF0IjoxNzc3Njk4NjQ5LCJpc3MiOiJBZmZvcmQgTWVkaWNhbCBUZWNobm9sb2dpZXMgUHJpdmF0ZSBMaW1pdGVkIiwianRpIjoiYWNkODk1YWMtYmQ4Zi00YjZlLWFjMzctNDk1NDE5NzRmY2NjIiwibG9jYWxlIjoiZW4tSU4iLCJuYW1lIjoia291c2hpayBsaW5ndXRsYSIsInN1YiI6IjFkMDI5ZjA4LTAzNTYtNGNlMi1iYzYyLTYwNDBmOGQ1MTY4ZCJ9LCJlbWFpbCI6ImtsOTQxMEBzcm1pc3QuZWR1LmluIiwibmFtZSI6ImtvdXNoaWsgbGluZ3V0bGEiLCJyb2xsTm8iOiJyYTIzMTEwMzAwMTAyODMiLCJhY2Nlc3NDb2RlIjoiUWticHhIIiwiY2xpZW50SUQiOiIxZDAyOWYwOC0wMzU2LTRjZTItYmM2Mi02MDQwZjhkNTE2OGQiLCJjbGllbnRTZWNyZXQiOiJObVpCa1ZQVGZ0VGVuV1RWIn0.1CxMTOgkeX0wNK6vqj0dxlLLUaxmwGEksUrrIuJmNfY";
+    private static final String AUTH_TOKEN = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJrbDk0MTBAc3JtaXN0LmVkdS5pbiIsImV4cCI6MTc3NzcwMTM2NSwiaWF0IjoxNzc3NzAwNDY1LCJpc3MiOiJBZmZvcmQgTWVkaWNhbCBUZWNobm9sb2dpZXMgUHJpdmF0ZSBMaW1pdGVkIiwianRpIjoiNDBkMDFmYjktOWFkYi00YThhLWI4YjEtNTE0YjI4MjhmODY4IiwibG9jYWxlIjoiZW4tSU4iLCJuYW1lIjoia291c2hpayBsaW5ndXRsYSIsInN1YiI6IjFkMDI5ZjA4LTAzNTYtNGNlMi1iYzYyLTYwNDBmOGQ1MTY4ZCJ9LCJlbWFpbCI6ImtsOTQxMEBzcm1pc3QuZWR1LmluIiwibmFtZSI6ImtvdXNoaWsgbGluZ3V0bGEiLCJyb2xsTm8iOiJyYTIzMTEwMzAwMTAyODMiLCJhY2Nlc3NDb2RlIjoiUWticHhIIiwiY2xpZW50SUQiOiIxZDAyOWYwOC0wMzU2LTRjZTItYmM2Mi02MDQwZjhkNTE2OGQiLCJjbGllbnRTZWNyZXQiOiJObVpCa1ZQVGZ0VGVuV1RWIn0.nO94Y1-lYSq06rnxoYKiXgcESZBaF19wA5Ho0ELGQ6A";
 
     private static final LoggingMiddleware logger = new LoggingMiddleware("VehicleMaintenanceScheduler");
 
@@ -28,10 +28,10 @@ public class VehicleMaintenanceScheduler {
     public static void main(String[] args) throws Exception {
         logger.info("Starting Vehicle Maintenance Scheduler");
 
-        String depotJson   = httpGet(DEPOTS_URL);
+        String depotJson = httpGet(DEPOTS_URL);
         String vehicleJson = httpGet(VEHICLES_URL);
 
-        List<Depot>   depots   = parseDepots(depotJson);
+        List<Depot> depots = parseDepots(depotJson);
         List<Vehicle> vehicles = parseVehicles(vehicleJson);
 
         for (Depot depot : depots) {
@@ -64,7 +64,7 @@ public class VehicleMaintenanceScheduler {
         String[] parts = json.split("\\{");
         for (String part : parts) {
             if (part.contains("\"ID\"")) {
-                int id    = extractInt(part, "ID");
+                int id = extractInt(part, "ID");
                 int hours = extractInt(part, "MechanicHours");
                 list.add(new Depot(id, hours));
                 logger.debug("Parsed depot ID=" + id + " hours=" + hours);
@@ -73,7 +73,7 @@ public class VehicleMaintenanceScheduler {
         return list;
     }
 
-    static List<Vehicle> parseVehicles(String json) {
+    private static List<Vehicle> parseVehicles(String json) {
         List<Vehicle> list = new ArrayList<>();
         String[] parts = json.split("\\{");
         for (String part : parts) {
@@ -88,7 +88,7 @@ public class VehicleMaintenanceScheduler {
         return list;
     }
 
-    static int extractInt(String obj, String key) {
+    private static int extractInt(String obj, String key) {
         String search = "\"" + key + "\":";
         int idx = obj.indexOf(search);
         if (idx < 0) return 0;
@@ -99,7 +99,7 @@ public class VehicleMaintenanceScheduler {
         return Integer.parseInt(obj.substring(from, to));
     }
 
-    static String extractString(String obj, String key) {
+    private static String extractString(String obj, String key) {
         String search = "\"" + key + "\":\"";
         int idx = obj.indexOf(search);
         if (idx < 0) return "";
@@ -108,7 +108,7 @@ public class VehicleMaintenanceScheduler {
         return obj.substring(from, to);
     }
 
-    static void solveKnapsack(Depot depot, List<Vehicle> vehicles) {
+    private static void solveKnapsack(Depot depot, List<Vehicle> vehicles) {
         int n = vehicles.size();
         int W = depot.mechanicHours;
         int[][] dp = new int[n + 1][W + 1];

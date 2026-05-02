@@ -10,7 +10,7 @@ import java.util.*;
 public class PriorityInbox {
 
     private static final String NOTIFICATIONS_URL = "http://20.207.122.201/evaluation-service/notifications";
-    private static final String AUTH_TOKEN = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJrbDk0MTBAc3JtaXN0LmVkdS5pbiIsImV4cCI6MTc3NzcwMDcxMCwiaWF0IjoxNzc3Njk5ODEwLCJpc3MiOiJBZmZvcmQgTWVkaWNhbCBUZWNobm9sb2dpZXMgUHJpdmF0ZSBMaW1pdGVkIiwianRpIjoiYWIzYmM4NjUtOWZhMy00ZDI1LThmYjQtNTJhYzQzZWYxMzg2IiwibG9jYWxlIjoiZW4tSU4iLCJuYW1lIjoia291c2hpayBsaW5ndXRsYSIsInN1YiI6IjFkMDI5ZjA4LTAzNTYtNGNlMi1iYzYyLTYwNDBmOGQ1MTY4ZCJ9LCJlbWFpbCI6ImtsOTQxMEBzcm1pc3QuZWR1LmluIiwibmFtZSI6ImtvdXNoaWsgbGluZ3V0bGEiLCJyb2xsTm8iOiJyYTIzMTEwMzAwMTAyODMiLCJhY2Nlc3NDb2RlIjoiUWticHhIIiwiY2xpZW50SUQiOiIxZDAyOWYwOC0wMzU2LTRjZTItYmM2Mi02MDQwZjhkNTE2OGQiLCJjbGllbnRTZWNyZXQiOiJObVpCa1ZQVGZ0VGVuV1RWIn0.vW7JGTXOEP60en1dZN41EK1EMaogmElG1GRuaHRZLGA";
+    private static final String AUTH_TOKEN = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJrbDk0MTBAc3JtaXN0LmVkdS5pbiIsImV4cCI6MTc3NzcwMTg1MSwiaWF0IjoxNzc3NzAwOTUxLCJpc3MiOiJBZmZvcmQgTWVkaWNhbCBUZWNobm9sb2dpZXMgUHJpdmF0ZSBMaW1pdGVkIiwianRpIjoiMzY1OWU2YjktYWE5MS00NjVmLWEzNjQtZDcyYWFkMjI3ZTc2IiwibG9jYWxlIjoiZW4tSU4iLCJuYW1lIjoia291c2hpayBsaW5ndXRsYSIsInN1YiI6IjFkMDI5ZjA4LTAzNTYtNGNlMi1iYzYyLTYwNDBmOGQ1MTY4ZCJ9LCJlbWFpbCI6ImtsOTQxMEBzcm1pc3QuZWR1LmluIiwibmFtZSI6ImtvdXNoaWsgbGluZ3V0bGEiLCJyb2xsTm8iOiJyYTIzMTEwMzAwMTAyODMiLCJhY2Nlc3NDb2RlIjoiUWticHhIIiwiY2xpZW50SUQiOiIxZDAyOWYwOC0wMzU2LTRjZTItYmM2Mi02MDQwZjhkNTE2OGQiLCJjbGllbnRTZWNyZXQiOiJObVpCa1ZQVGZ0VGVuV1RWIn0.Mb-QrS9QKaVWpYd8IZYKPQJ_6-MpBU9XGQVp4UmPhaQ";
     private static final int TOP_N = 10;
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
@@ -36,7 +36,7 @@ public class PriorityInbox {
             switch (type) {
                 case "Placement": typeWeight = 3000; break;
                 case "Result":    typeWeight = 2000; break;
-                default:          typeWeight = 1000; break; // Event
+                default:          typeWeight = 1000; break;
             }
             long minutesAgo = ChronoUnit.MINUTES.between(timestamp, LocalDateTime.now());
             double recency = 1.0 / (minutesAgo + 1);
@@ -52,7 +52,6 @@ public class PriorityInbox {
 
         logger.info("Total notifications fetched: " + all.size());
 
-        // Min-heap of size N - keeps top N highest scoring notifications
         PriorityQueue<Notification> minHeap = new PriorityQueue<>(
             Comparator.comparingDouble(n -> n.priorityScore)
         );
@@ -60,11 +59,10 @@ public class PriorityInbox {
         for (Notification n : all) {
             minHeap.offer(n);
             if (minHeap.size() > TOP_N) {
-                minHeap.poll(); // remove lowest priority
+                minHeap.poll();
             }
         }
 
-        // Extract and sort descending for display
         List<Notification> topN = new ArrayList<>(minHeap);
         topN.sort((a, b) -> Double.compare(b.priorityScore, a.priorityScore));
 
